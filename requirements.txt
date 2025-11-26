@@ -1,0 +1,20 @@
+transformers
+torch 
+tensorflow 
+scikit-learn 
+pandas 
+numpy 
+streamlit 
+nltk 
+spacy
+ipykernel
+accelerate
+
+
+#streamlit – for building the user interface
+#transformers – for loading the chatbot model from HuggingFace
+#torch / tensorflow – backend libraries used by the model
+#sklearn – for sentiment model training
+#nltk – for text preprocessing
+#pickle – to save and load the trained model
+#pandas & numpy – for handling the dataset
