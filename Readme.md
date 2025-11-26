@@ -1,7 +1,7 @@
 
 # SentiBot 🤖💙  
 A lightweight AI-powered chatbot combined with a custom-trained sentiment analysis model.  
-Built using **Python**, **Streamlit**, **HuggingFace Transformers**, and **Scikit-Learn**.
+Built using **Python**, **Streamlit**, **HuggingFace Transformers**,**NLTK** and **Scikit-Learn**.
 
 ---
 
@@ -20,7 +20,12 @@ Built using **Python**, **Streamlit**, **HuggingFace Transformers**, and **Sciki
 - **Scikit-Learn**
 - **NLTK**
 - **Streamlit**
-
+- **tensorflow**
+- **pandas** 
+- **numpy** 
+- **spacy**
+- **ipykernel**
+- **accelerate**
 ---
 
 ## 📂 Project Structure
@@ -29,9 +34,11 @@ SentiBot/
 │── app.py               # Streamlit app  
 │── chatbot.py           # Chatbot model  
 │── sentiment.py         # Sentiment classifier  
-│── model.pkl            # Trained sentiment model  
+│── sentiment_model.pkl            # Trained sentiment model  
 │── vectorizer.pkl       # TF-IDF or CountVectorizer  
 │── README.md
+|── Reviews.csv
+|── sentiment.ipynb
 │── requirements.txt
 ```
 
@@ -41,7 +48,7 @@ SentiBot/
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/SentiBot.git
+git clone https://github.com/YogeshSharma185/SentiBot.git
 cd SentiBot
 ```
 
@@ -78,17 +85,6 @@ streamlit run app.py
 
 ---
 
-### **5. Open in browser**
-Once Streamlit starts, it will show something like:
-
-```
-Local URL: http://localhost:8501
-```
-
-Open this link to use **SentiBot 🤖💙**
-
----
-
 ## 📦 Dataset  
 This project uses the **Amazon Fine Food Reviews** dataset:  
 Kaggle → https://www.kaggle.com/datasets/mdraselsarker/amazon-fine-food-reviews
@@ -104,11 +100,6 @@ Training includes:
 The model outputs:  
 - **Positive**  
 - **Negative**
-
----
-
-## 📜 License  
-This project is licensed under the MIT License.
 
 ---
 
