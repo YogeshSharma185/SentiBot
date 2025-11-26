@@ -104,4 +104,4 @@ The model outputs:
 ---
 
 ## ✨ Author  
-Made with ❤️ for portfolio and production usage.
+Made with ❤️ by Yogesh.
